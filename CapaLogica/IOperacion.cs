@@ -10,6 +10,6 @@ namespace CapaLogica
     public interface IOperacion
     {
         //recordar que en las Interfaces puedo recibir
-        double Calcular(double a, double b);
+        double Calcular(double num1, double num2);
     }
 }
