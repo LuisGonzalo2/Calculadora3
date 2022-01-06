@@ -12,24 +12,5 @@ namespace CapaLogica
             return num1 + num2;
         }
 
-        //    public List<decimal> numeros { get; set; }
-        //    public Suma()
-        //    {
-        //        numeros = new List<decimal>();
-        //    }
-        //    public void agregar(decimal numero)
-        //    {
-        //        numeros.Add(numero);
-        //    }
-        //    public decimal Sumar()
-        //    {
-        //        decimal resultado = 0;
-        //        foreach (var item in this.numeros)
-        //        {
-        //            resultado += item;
-        //        }
-        //        return resultado;
-        //    }
-
     }
 }

@@ -10,7 +10,7 @@ namespace CapaLogica
         {
             return num1 / num2;
         }
-        public Boolean validar(decimal numeroUno, decimal numeroDos)
+        public Boolean validar(double numeroUno, double numeroDos)
         {
             Boolean validacion = true;
             if (numeroUno > 0 && numeroDos > 0)
