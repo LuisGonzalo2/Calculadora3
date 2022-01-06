@@ -1,25 +1,15 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace CapaLogica
 {
-    public class Division
+    //Strategy que implementa de la interfaz IOperacion
+    public class Division:IOperacion
     {
-        public decimal NumeroUno { get; set; }
-        public decimal NumeroDos { get; set; }
-        public Division()
+        public double Calcular(double num1, double num2)
         {
-
+            return num1 / num2;
         }
-        public Division(decimal numeroUno, decimal numeroDos)
-        {
-            this.NumeroDos = numeroDos;
-            this.NumeroUno = numeroUno;
-        }
-        public decimal Dividir()
-        {
-            return this.NumeroUno / this.NumeroDos;
-        }
-
         public Boolean validar(decimal numeroUno, decimal numeroDos)
         {
             Boolean validacion = true;

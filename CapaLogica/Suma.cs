@@ -1,29 +1,35 @@
-﻿
+﻿using System;
 using System.Collections.Generic;
 
 
 namespace CapaLogica
 {
-    public class Suma
+    //Strategy que implementa de la interfaz IOperacion
+    public class Suma:IOperacion
     {
-        public List<decimal> numeros { get; set; }
-        public Suma()
+        public double Calcular(double num1, double num2)
         {
-            numeros = new List<decimal>();
+            return num1 + num2;
         }
-        public void agregar(decimal numero)
-        {
-            numeros.Add(numero);
-        }
-        public decimal Sumar()
-        {
-            decimal resultado = 0;
-            foreach (var item in this.numeros)
-            {
-                resultado += item;
-            }
-            return resultado;
-        }
+
+        //    public List<decimal> numeros { get; set; }
+        //    public Suma()
+        //    {
+        //        numeros = new List<decimal>();
+        //    }
+        //    public void agregar(decimal numero)
+        //    {
+        //        numeros.Add(numero);
+        //    }
+        //    public decimal Sumar()
+        //    {
+        //        decimal resultado = 0;
+        //        foreach (var item in this.numeros)
+        //        {
+        //            resultado += item;
+        //        }
+        //        return resultado;
+        //    }
 
     }
 }

@@ -1,23 +1,14 @@
-﻿
+﻿using System;
+using System.Collections.Generic;
 namespace CapaLogica
 {
-    public class Multiplicacion
+    //Strategy que implementa de la interfaz IOperacion
+    public class Multiplicacion : IOperacion
     {
-        public decimal NumeroUno { get; set; }
-        public decimal NumeroDos { get; set; }
-        public Multiplicacion()
+        public double Calcular(double num1, double num2)
         {
-            
-        }
-        public Multiplicacion(decimal numeroUno, decimal numeroDos)
-        {
-            this.NumeroDos = numeroDos;
-            this.NumeroUno = numeroUno;
-        }
-        public decimal Multiplicar()
-        {
-            return this.NumeroUno * this.NumeroDos;
-        }
+            return num1 * num2;
 
+        }
     }
 }

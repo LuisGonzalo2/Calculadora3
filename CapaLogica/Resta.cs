@@ -1,19 +1,13 @@
-﻿namespace CapaLogica
+﻿using System;
+using System.Collections.Generic;
+namespace CapaLogica
 {
-    public class Resta
+    //Strategy que implementa de la interfaz IOperacion
+    public class Resta : IOperacion
     {
-        public decimal NumeroUno { get; set; }
-        public decimal NumeroDos { get; set; }
-        public Resta() { }
-
-        public Resta(decimal numeroUno, decimal numeroDos)
+        public double Calcular(double num1, double num2)
         {
-            this.NumeroDos = numeroDos;
-            this.NumeroUno = numeroUno;
-        }
-        public decimal Restar()
-        {
-            return this.NumeroUno - this.NumeroDos;
+            return num1 - num2;
         }
     }
 }
